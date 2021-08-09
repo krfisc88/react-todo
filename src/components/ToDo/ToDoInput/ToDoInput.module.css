@@ -1,0 +1,51 @@
+.form-control input,
+.form-control label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.form-control input {
+  border: 1px solid #004643;
+  border-radius: 5px;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  padding-left: 1rem;
+}
+
+.form-control label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-control.invalid input {
+  border: 3px solid red;
+  animation: shake 0.3s linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(2px);
+    border-width: 5px;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  50% {
+    transform: translate(-2px);
+  }
+  100% {
+    transform: translate(2px);
+  }
+}
+
+@media (min-width: 768px) {
+  .form-control.btn {
+    float: right;
+  }
+}

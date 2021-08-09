@@ -1,0 +1,42 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  border-left: 6px solid #004643;
+  border-top: 1px solid #004643;
+  border-bottom: 1px solid #004643;
+  border-right: 1px solid #004643;
+  display: block;
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  overflow-wrap: break-word;
+  padding: 0.5rem 1rem;
+}
+
+.list li:hover {
+  background-image: linear-gradient(to right, white, #004643);
+  background-size: 400% 400%;
+  animation: swoosh 0.3s ease forwards;
+}
+
+@keyframes swoosh {
+  0% {
+    background-position: 0% 50%;
+    color: inherit;
+  }
+
+  100% {
+    background-position: 100% 50%;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .list li {
+    overflow: visible;
+  }
+}

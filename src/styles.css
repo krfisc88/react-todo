@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.app {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .app {
+    width: 50%;
+    margin: auto;
+  }
+}
